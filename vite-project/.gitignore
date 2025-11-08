@@ -1,0 +1,49 @@
+# 依赖包目录（通过包管理器安装，无需提交）
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# 构建/打包产物（编译后的代码，无需提交）
+dist/
+build/
+out/
+dist-ssr/
+*.local
+
+# 环境变量文件（含敏感信息，如 API 密钥等）
+.env
+.env.*
+!.env.example  # 保留示例文件（不含敏感信息，供参考）
+
+# 日志和临时文件
+logs/
+*.log
+*.tmp
+*.swp
+*.swo
+
+# 编辑器配置（不同开发者的本地配置不同，无需提交）
+.idea/
+.vscode/
+!.vscode/extensions.json  # 保留扩展推荐（可选）
+!.vscode/settings.json    # 若团队统一配置可保留，否则忽略
+*.sublime-*
+*.idea/
+*.iml
+
+# 操作系统生成的文件
+.DS_Store        # macOS
+Thumbs.db        # Windows
+desktop.ini      # Windows
+
+# 测试相关（覆盖率报告、测试缓存等）
+coverage/
+jest-cache/
+cypress/screenshots/
+cypress/videos/
+
+# 缓存文件
+.eslintcache
+.stylelintcache
+.babelrc.cache
